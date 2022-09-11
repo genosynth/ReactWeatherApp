@@ -1,0 +1,61 @@
+.search-header {
+  width:20%;
+  height: 15px;
+  margin-top: 15px;
+  
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.info-results {
+  display: flex;  
+  padding: 5%;
+
+}
+
+.describtion-results {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.76);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  padding: 3%;
+}
+
+.describtion-results div{
+  padding: 5%;
+}
+
+
+.days-forecast {
+ 
+}
+
+.days-forecast table {
+  width:100%;
+
+
+}
+
+.days-forecast table tr{
+  border-bottom:  solid thin black;
+  
+
+}
+
+.days-forecast table tr td, .days-forecast tr th {
+  text-align: center;
+}
+
+.days {
+  display: flex;
+  overflow-x: auto;
+}
+
+.days div {
+  padding-left: 5%;
+}
