@@ -48,7 +48,7 @@ function DescribtionResults({results}) {
         </div>
         <div>
             <h5>PRESSURE</h5>
-            <span>{results.main.pressure}</span>
+            <span>{results.main.pressure} hPa</span>
         </div>
         <div>
             <h5>VISIBILITY</h5>
