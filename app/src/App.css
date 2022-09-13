@@ -22,8 +22,9 @@
   background-color: black;
   color: rgba(255, 255, 255, 0.76);
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  padding: 3%;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+ 
+  text-align: center;
 }
 
 .describtion-results div{

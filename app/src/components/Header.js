@@ -1,26 +1,38 @@
-import React from 'react'
+import React, {useState}from 'react'
 import Form from 'react-bootstrap/Form'
 import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
 
-function header({makeAPICall}) {
+function Header({makeAPICall}) {
+
+  const [search,updateSearch] = useState()
+
+  
+  const handleChange = event => {
+    updateSearch(event.target.value);
+
+  };
+
+  
   return (
     <div className='header-nav'>
          <h1>MY WEATHER</h1>
         <div className='search-header'>
           
-            <InputGroup className="mb-3">
+            <InputGroup className="mb-3" >
         
-            <Form.Control
+            <Form.Control 
             placeholder="Country/City"
             aria-label="Country/City"
             aria-describedby="basic-addon1"
+            
+            onChange={handleChange}
             />
-             <Button variant="dark" onClick={()=>{makeAPICall("malta")}}>Search</Button>
+             <Button variant="dark" onClick={()=>{makeAPICall(search)}}>Search</Button>
             </InputGroup>
         </div> 
     </div>
   )
 }
 
-export default header
+export default Header
