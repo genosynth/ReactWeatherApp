@@ -60,3 +60,11 @@
 .days div {
   padding-left: 5%;
 }
+
+.instructions {
+
+  margin: 0 auto ;
+  width:50%;
+  font-size: larger;
+  font-weight: bold;
+}
